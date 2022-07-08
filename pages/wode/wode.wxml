@@ -1,0 +1,18 @@
+<view style="text-align:center"> </view>
+<view class='tx_box'  bindinput ="showinput" >
+  <image  class='tx' bindinput ="showinput" src='../../images/logo.jpg' mode='aspectFill'></image>
+  <image class='bq' bindinput ="showinput" src='../../images/bq_man.png'></image>
+</view>
+<view class='nc' url="" >
+  <image src='../../images/shenfen.png'></image>
+  <text>{{nick_name}}({{juese}})</text>
+</view>
+<view class='hui'></view>
+<view class='sige'>
+
+  <navigator url="/pages/kechengbiao/kechengbiao">
+    <image src='../../images/sige_1.png' mode='widthFix'></image>
+    <text>课程表</text>
+  </navigator>
+ 
+</view>

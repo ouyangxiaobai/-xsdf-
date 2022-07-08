@@ -1,0 +1,62 @@
+{
+  "pages": [
+    "pages/index/index", 
+    "pages/logs/logs",
+    "pages/navigate/navigate",
+     "pages/details/details", 
+    "pages/wode/wode",
+       "pages/zhuce/zhuce", 
+       "pages/xuesheng/xuesheng",
+       "pages/kechengbiao/kechengbiao",
+       "pages/chengji/chengji",
+        "pages/xueshengdetails/xueshengdetails",
+       "pages/chengjidetails/chengjidetails",       
+       "pages/xueshenadd/xueshenadd",            
+       "pages/login/login"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#0CDBEE",
+    "navigationBarTitleText": "教学",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/menu_icon_0_normal.png",
+        "selectedIconPath": "images/menu_icon_0_pressed.png"
+      },
+      {
+        "pagePath": "pages/xuesheng/xuesheng",
+        "text": "学生信息",
+        "iconPath": "images/tabbar_order.png",
+        "selectedIconPath": "images/tabbar_order_selected.png"
+      },
+      {
+        "pagePath": "pages/chengji/chengji",
+        "text": "成绩信息",
+        "iconPath": "images/tabbar_order.png",
+        "selectedIconPath": "images/tabbar_order_selected.png"
+      },
+     
+      
+      {
+        "pagePath": "pages/wode/wode",
+        "text": "我的",
+        "iconPath": "images/nav1.png",
+        "selectedIconPath": "images/nav1_select.png"
+      }
+    ],
+    "position": "bottom"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
+}

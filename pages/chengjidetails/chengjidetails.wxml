@@ -1,0 +1,35 @@
+
+
+<import src="../../wxParse/wxParse.wxml"/> 
+<text class='title'>{{title}}</text>
+<text class='shijian'>{{shijian}}</text>
+<view class='hui'></view>
+
+<view class="wxParse" style="margin-top:40px">
+    <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+</view>
+
+ 
+
+
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <image src='../../images/bg.jpg' mode='aspectFill' class='bg'></image>
+
+   
+   
+  <view class='hang'><view class='z'>姓名:</view><input  value="{{xingming}}"  bindinput ="xingminginput"    disabled="disabled" name="xingming" placeholder="请输入姓名"  type='text' /><view class='y'></view></view>
+      <view class='hang'><view class='z'>科目 :</view><input value="{{kemu}}"      bindinput ="kemuinput" name="banji" disabled="disabled" placeholder="请输入科目"  type='text' /><view class='y'></view></view>
+  <view class='hang'><view class='z'>成绩 :</view><input value="{{chengji}}"     bindinput ="chengjiinput" name="banzhuren" placeholder="请输入班主任"  type='text' /><view class='y'></view></view> 
+
+  <view class='hang'> 
+  <view class='y'></view>
+  </view>
+   
+   
+
+</form>
+
+
+
+
+

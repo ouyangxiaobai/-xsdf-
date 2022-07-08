@@ -1,0 +1,40 @@
+
+
+<import src="../../wxParse/wxParse.wxml"/> 
+<text class='title'>{{title}}</text>
+<text class='shijian'>{{shijian}}</text>
+<view class='hui'></view>
+
+<view class="wxParse" style="margin-top:40px">
+    <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+</view>
+
+ 
+
+
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <image src='../../images/bg.jpg' mode='aspectFill' class='bg'></image>
+
+  
+
+   
+  <view class='hang'><view class='z'>姓名:</view><input  value="{{xingming}}"  bindinput ="xingminginput" name="xingming" placeholder="请输入姓名"  type='text' /><view class='y'></view></view>
+
+<view class='hang'><view class='z'>性别 :</view><input value="{{xingbie}}"      bindinput ="xingbieinput" name="banji" placeholder="请输入性别"  type='text' /><view class='y'></view></view>
+   
+  <view class='hang'><view class='z'>班级 :</view><input value="{{banji}}"      bindinput ="banjiinput" name="banji" placeholder="请输入班级"  type='text' /><view class='y'></view></view>
+  <view class='hang'><view class='z'>班主任 :</view><input value="{{banzhuren}}"     bindinput ="banzhureninput" name="banzhuren" placeholder="请输入班主任"  type='text' /><view class='y'></view></view> 
+
+  <view class='hang'> 
+  <view class='y'></view>
+  </view>
+   
+     <button   bindtap="xiugaiclick" class='but'><image src='../../images/but2.png' mode='aspectFill'></image><text>修改</text></button>
+ 
+
+</form>
+
+
+
+
+
